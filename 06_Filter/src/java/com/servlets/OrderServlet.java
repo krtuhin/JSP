@@ -31,12 +31,12 @@ public class OrderServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            
+
             System.out.println("Order Servlet executed...");
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet OrderServlet</title>");            
+            out.println("<title>Servlet OrderServlet</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Welcome to Order Servlet</h1>");
