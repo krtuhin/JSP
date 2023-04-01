@@ -1,4 +1,4 @@
-<h1 aling="center"> JSP (JavaServer Page) </h1>
+<h1 align="center"> JSP (JavaServer Page) </h1>
 
 <p> => JSP is a extension of Servlet Technology but JSP provides more functionality than Servlet. </p>
 <p> --> JSP is a sipmle page like HTMl, with (.jsp) extension, in which we can write HTML, CSS, JavaSript as well as Java code together with the help of particulat Tag. </p>
