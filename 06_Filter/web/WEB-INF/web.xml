@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>ProfileServlet</servlet-name>
+        <servlet-class>com.servlets.ProfileServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>OrderServlet</servlet-name>
+        <servlet-class>com.servlets.OrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProfileServlet</servlet-name>
+        <url-pattern>/ProfileServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OrderServlet</servlet-name>
+        <url-pattern>/OrderServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!--Filter-->
+    <filter>
+        <filter-name>filter1</filter-name>
+        <filter-class>com.servlets.MyFilter</filter-class>
+    </filter>
+        
+    <!--Filter Mapping-->
+    <filter-mapping>
+        <filter-name>filter1</filter-name>
+        
+        <!--run before a particular servlet-->
+        <url-pattern>/ProfileServlet</url-pattern>
+        <url-pattern>/OrderServlet</url-pattern>
+        
+        <!--in this case the filter will run before all the servlets-->
+        <!--<url-pattern>/*</url-pattern>-->
+    </filter-mapping>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
