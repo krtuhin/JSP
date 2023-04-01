@@ -7,6 +7,6 @@
     </head>
     <body>
         <h1>This is Page one</h1>
-        <a href="page2.jsp" style="font-size: 30px; text-decoration: none;">Second Page</a>
+        <a href="page2.jsp" style="font-size: 30px; text-decoration: none;">Go to Second Page</a>
     </body>
 </html>

@@ -7,9 +7,11 @@
     </head>
     <body>
         <h1 style="color: green; background: yellow;">This is Page three</h1>
-        
+
+        <!--third page is redirecting in external website-->
         <%
-        response.sendRedirect("https://mail.google.com/mail/u/0/#inbox");
+            response.sendRedirect("https://mail.google.com/mail/u/0/#inbox");
         %>
+
     </body>
 </html>
