@@ -20,6 +20,6 @@
             int division = a / b;
         %>
 
-        <h3> Result is: <%= division %> </h3>
+        <h3> Result is: <%= division%> </h3>
     </body>
 </html>

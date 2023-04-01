@@ -16,14 +16,14 @@
         </style>
     </head>
     <body>
-        
+
         <div style="padding: 20px; color: red; background: #e2e2e2">
             <h1>Sorry !! Something went wrong...</h1>
             <br>
-            
+
             <!--implicit object of exception, it will print the exception that happened-->
-            <p><%= exception %></p>
+            <p><%= exception%></p>
         </div>
-        
+
     </body>
 </html>
